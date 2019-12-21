@@ -1,2 +1,2 @@
 # HTML
-Simple HTML code for webpages
+Simple HTML example codes for webpages
