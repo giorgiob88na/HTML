@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="forma">
+<input type="text" value="Nome">
+<input type="text" value="Cognome">
+<input type="text" value="Telefono">
+<input type="text" value="Mail">
+<button  id="idbutt" onclick="funzione()"> Prova </button>
+</form>
+<script>
+function funzione(){
+	var $j = jQuery.noConflict();
+$j("#idbutt")
+.css("color","red");
+
+var x=$j("<div><p>Mr Giorgio Bì</p></div>");
+x.appendTo("body");
+
+$j( document.div ).on("ready",function() {
+  alert('DIV è stato caricato');
+});
+$j("div").css("font-size","30px","font-family","Verdana");
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+ 
+	
+	document.writeln("Allego testo risposta\n"+this.responseText);
+
+//Capire perchè il document.write lo scrive in HTML ma 
+//Non si vede il codice sorgente annesso
+			
+			
+
+    }
+  };
+  xhttp.setRequesHeader("","");
+  xhttp.open("POST", "Try", true);
+  xhttp.send();
+
+
+
+}
+
+</script>
+</body>
+</html>
